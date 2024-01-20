@@ -1,0 +1,28 @@
+---
+import HeaderLink from './HeaderLink.astro';
+---
+
+<header>
+  <nav class="flex justify-center gap-6 py-6">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      <HeaderLink href="/about">Contact Me</HeaderLink>
+  </nav>
+</header>
+<style>
+  header {
+    margin: 0;
+	color: #666;
+  }
+  nav a {
+    border-bottom: 4px solid transparent;
+    text-decoration: none;
+  }
+  nav a:hover {
+	border-bottom-color: #777;
+  }
+  nav a.active {
+    text-decoration: none;
+    border-bottom-color: #666;
+  }
+</style>
